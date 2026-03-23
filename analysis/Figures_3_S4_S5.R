@@ -114,11 +114,12 @@ ipa_trait_wrap <- fish_cwm_long %>%
   theme(strip.background = element_rect(fill = NA, colour = NA),
         strip.text.x = element_text(size = 10, margin = margin(b=1,t=1)),
         panel.spacing.y = unit(0.5, "lines")) +
-  facet_wrap(~factor(trait_group, 
-                     labels = c("Transverse shape",
-                                "Vertical distribition",
-                                "Feeding guild", 
-                                "Migration behavior"))) +
+  facet_wrap2(vars(factor(trait_group, 
+                          labels = c("Transverse shape",
+                                     "Vertical distribition",
+                                     "Feeding guild", 
+                                     "Migration behavior"))), 
+              nrow = 2,axes = TRUE, remove_labels = TRUE) +
   labs(fill = "Trait value", y = "Relative abundance of\nCWM trait values", x = "Condition Category")
 
 
@@ -157,11 +158,12 @@ year_trait_wrap <- fish_cwm_long %>%
   theme(strip.background = element_rect(fill = NA, colour = NA),
         strip.text.x = element_text(size = 10, margin = margin(b=1,t=1)),
         panel.spacing.y = unit(0.5, "lines")) +
-  facet_wrap(~factor(trait_group, 
-                     labels = c("Transverse shape",
-                                "Vertical distribition",
-                                "Feeding guild", 
-                                "Migration behavior"))) +
+  facet_wrap2(vars(factor(trait_group, 
+                          labels = c("Transverse shape",
+                                     "Vertical distribition",
+                                     "Feeding guild", 
+                                     "Migration behavior"))), 
+              nrow = 2,axes = TRUE, remove_labels = TRUE) + 
   labs(fill = "Trait value", y = "Relative abundance of\nCWM trait values", x = "Year")
 
 year_length_plot <- length_cwm %>% 
