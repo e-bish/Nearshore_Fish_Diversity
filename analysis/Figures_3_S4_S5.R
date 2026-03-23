@@ -72,7 +72,7 @@ trait_wrap_plot <- fish_cwm_long %>%
                                 "Vertical distribition",
                                 "Feeding guild", 
                                 "Migration behavior"))), 
-              nrow = 2,axes = TRUE, remove_labels = TRUE) + 
+              nrow = 2,axes = 'x', remove_labels = TRUE) + 
   labs(fill = "Trait value", y = "Relative abundance of\nCWM trait values", x = "Site")
 
 length_cwm <- fish_cwm_df %>% 
@@ -119,7 +119,7 @@ ipa_trait_wrap <- fish_cwm_long %>%
                                      "Vertical distribition",
                                      "Feeding guild", 
                                      "Migration behavior"))), 
-              nrow = 2,axes = TRUE, remove_labels = TRUE) +
+              nrow = 2,axes = 'x', remove_labels = TRUE) +
   labs(fill = "Trait value", y = "Relative abundance of\nCWM trait values", x = "Condition Category")
 
 
@@ -163,7 +163,7 @@ year_trait_wrap <- fish_cwm_long %>%
                                      "Vertical distribition",
                                      "Feeding guild", 
                                      "Migration behavior"))), 
-              nrow = 2,axes = TRUE, remove_labels = TRUE) + 
+              nrow = 2,axes = 'x', remove_labels = TRUE) + 
   labs(fill = "Trait value", y = "Relative abundance of\nCWM trait values", x = "Year")
 
 year_length_plot <- length_cwm %>% 
