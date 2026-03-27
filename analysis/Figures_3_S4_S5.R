@@ -92,7 +92,7 @@ length_plot <- length_cwm %>%
   theme(axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size = 10),
         panel.spacing.y = unit(0.5, "lines")) +
-  labs(y = "CWM of\nmean lengths (mm)", title = "Size")
+  labs(y = "CWM of\nsize (mm)", title = "Size")
 
 length_plot + trait_wrap_plot + plot_layout(ncol = 1, heights = c(0.5,1)) + 
   plot_layout(guides = "collect") 
@@ -136,7 +136,7 @@ ipa_length_plot <- length_cwm %>%
   theme(axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size = 10),
         panel.spacing.y = unit(0.5, "lines")) +
-  labs(y = "CWM of\nmean lengths (mm)", title = "Size")
+  labs(y = "CWM of\nsize (mm)", title = "Size")
 
 ipa_length_plot + ipa_trait_wrap + plot_layout(ncol = 1, heights = c(0.5,1)) + plot_layout(guides = "collect") 
 
@@ -179,7 +179,7 @@ year_length_plot <- length_cwm %>%
   theme(axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size = 10),
         panel.spacing.y = unit(0.5, "lines")) +
-  labs(y = "CWM of\nmean lengths (mm)", title = "Size")
+  labs(y = "CWM of\nsize (mm)", title = "Size")
 
 year_length_plot + year_trait_wrap + plot_layout(ncol = 1, heights = c(0.5,1)) + plot_layout(guides = "collect") 
 
